@@ -1,0 +1,19 @@
+<%- include("partials/header") -%>
+    <% result.forEach(blog=> { %>
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">
+                    <%= blog.title %>
+                </h1>
+                <p class="lead">
+                    <%= blog.content %>
+                </p>
+            </div>
+        </div>
+
+        <% }); %>
+
+
+
+            <%- include("partials/footer") -%>
